@@ -1,0 +1,173 @@
+% -----------------------------------------------------------------------------
+% Entrevistas com Stakeholders
+% -----------------------------------------------------------------------------
+
+\chapter{Entrevistas com \textit{Stakeholders}}
+\label{chap:entrevistas}
+
+
+Como forma de validar a real necessidade de criação de um \textit{design system} na empresa avaliada no experimento, foram realizadas entrevistas com os principais \textit{stakeholders} do projeto: designers e desenvolvedores \textit{frontend}. Neste capítulo são apresentados, de maneira consolidada, os resultados obtidos como consequência de tais entrevistas.
+
+Para garantir que os resultados não fossem enviezados em um único contexto da organização, foram selecionados 3 profissionais com desafios destintos dentro da empresa, como representantes de cada um dos grupos.
+
+Todas as entrevistas foram gravadas, conforme conscentimento dos participantes. Para garantir o anônimato dos envolvidos, todos os dados apresentados neste capítulo estarão associados a nomes de marcação, não expondo nomes e dados pessoais reais dos voluntários.
+
+\section{Designers}
+\label{sec:entrevistasDesigners}
+
+De acordo com o roteiro de entrevista ilustrado no Apêndice A deste projeto, os designers avaliados foram submetidos a algumas perguntas genéricas onde puderam expor um pouco dos detalhes do seu dia-a-dia de trabalho. O \autoref{table:designersResearch} apresenta as características de cada um dos profissionais entrevistados.
+
+\begin{quadro}
+\centering
+\begin{tabular}{|m{4cm}|m{10cm}|} \hline
+	
+	\multicolumn{1}{|c|}{\bfseries Voluntário} & \multicolumn{1}{c|}{\bfseries Contexto} \\\hline
+	
+	 Designer 1 & Profissional mais experiente do grupo, sendo a principal referência de design em toda a organização. Está diretamente envolvido em um projeto mais novo e bastante promissor da empresa. Nesse projeto, teve a liberdade de definir novos padrões de design que hoje são tomados como referência para todos os novos produtos da empresa. \\\hline
+	 
+	 Designer 2 & Pilar de design do maior \textit{squad} da empresa, que tem como objetivo dar manutenção e evoluir todo o fluxo de comunicação da plataforma. Está diretamente envolvido com sistemas legados do produto, e tem como principal desafio garantir uma boa experiência do usuário ao longo do uso da plataforma. \\\hline
+	 
+	 Designer 3 &  Responsável pelo design da área de marketing da organização, estando diretamente envolvido em campanhas de eventos, contratação e lançamento de novos produtos. Também é responsável pelas artes do site e do blog de tecnologia da empresa. \\\hline
+    
+\end{tabular}
+\caption{Características dos designers entrevistados}
+\fonte{Próprio autor}
+\label{table:designersResearch}
+\end{quadro}
+
+A seguir, são apresentados os resultados consolidados de perguntas chave realizadas nas entrevistas.
+
+\textbf{Questão 1:} Contextualize, brevemente, a maneira como os processos de design são adotados na empresa, atualmente.
+
+\begin{quote}
+    A maioria das empresas de tecnologia são focadas no desenvolvedor. Por isso, grande parte dos processos de desenvolvimento existentes estão associados ao código-fonte, sendo o design muitas vezes negligenciado. Por muito tempo essa foi a realidade da Dito, porém nos últimos 2 anos a área de design começou a conquistar seu espaço na organização, tendo, pela primeira vez, profissionais especializados da área designados a evoluírem a plataforma com foco no usuário final do produto.
+    
+    Foi a partir desse momento que iniciaram-se trabalhos para definir os primeiros processos de design da empresa. O primeiro deles foi a inclusão de ferramentas como Sketch e Zeplin na rotina dos designers e desenvolvedores \textit{frontend}. Com elas, o designer exerce seu papel de pensar na melhor interface de usuário possível para um dado problema e, após sua prototipação, o desenvolvedor tem acesso a arte de maneira detalhada tecnicamente. Isso fez com que as novas interfaces desenvolvidas, desde então, fossem mais fidedignas àquilo idezaliado pelo designer.
+    
+    Apesar do considerável avanço, ainda entende-se que a empresa está "engatinhando" no que se diz respeito à processos de design. Ainda existe uma visão geral de que design se restringe unicamente à criação de interfaces. No que se tange à concepção de produtos, não está bem definido um processo de design escalável. Pensando nisso, um dos \textit{squads} da empresa vem tentando implacar um novo modelo conhecido como \textit{Double Diamond Design}, proposto pela metodologia de \textit{design thinking}. Tal processo é dividido em fases de imersão, ideação, prototipação e testes de usabilidade, objetivando a construção de produtos de maneira mais rápida e aderente às necessidades do usuários final.
+    
+    Na área de marketing, por sua vez, o contexto é um pouco diferente: contando apenas com dois profissionais alocadas para gerenciar toda a área, a criação de uma \textit{styleguide} se tornou uma necessidade latente. A maneira encontrada para se ganhar velocidade, e atender à toda a demanda da empresa, foi a criação de templates. Tal \textit{styleguide} foi criada a partir de um dos produtos da plataforma, porém não existe ligação alguma entre os dois artefatos.
+\end{quote}
+
+\textbf{Questão 2:} Quais as maiores dificuldades e frustrações que você encontra no seu trabalho, como consequência dos processos atuais de design?
+
+\begin{quote}
+    Tendo em vista que a maturidade em design da Dito está passando por um processo de evolução, os designers da empresa ainda precisam empregar uma quantidade de esforço significativa para a construção de novos protótipos de interfaces de usuários, uma vez que a capacidade de reusabilidade de componentes ainda está aquém do ideal. 
+    
+    Por conta disso, as maiores frustrações do time, em geral, estão relacionadas à impossibilidade de se ter um contato mais próximo com o usuário final do produto. Deseja-se que tarefas de teste de usabilidade e metrificação de maturidade façam parte do processo de design da Dito, porém atualmente isso é inviável pois os designers estão muito ocupados em dar vazão à demandas de criação de novas interfaces.
+    
+    Também destaca-se a falta de uma figura exclusivamente responsável por definir e garantir que as diretrizes de design estão sendo seguidas pela organização como um todo. Espera-se que essa pessoa também exerça o papel de tutor de talentos menos experientes, papel este inexistente na conjuntura atual da empresa.
+\end{quote}
+
+\textbf{Questão 3:} Como são tomadas decisões de design na empresa? E no seu time? Quem são as pessoas envolvidas?
+
+\begin{quote}
+    Basicamente, a partir da apresentação de um dado desafio, inicia-se uma fase de análise aprofundada do problema. Durante essa fase, é bastante comum o envolvimento de profissionais de negócio e desenvolvedores para a validação da viabilidade de possíveis soluções. Vez ou outra acontecem alterações nas decisões de design pré-estabelecidas devido à inviabilidade técnica da proposta. Portanto, esse tipo de tomada de decisão já é fruto de um trabalho colaborativo entre diferentes perfis de profissionais.
+    
+    Entretanto, o núcleo das discussões normalmente acontece no contexto individual do \textit{squad} responsável pelo problema. Não existe consenso geral de diretrizes a serem seguidas pelos times. Dessa forma, o cenário atual é caracterizado pelo trabalho isolado dos designers da empresa. Cada um deles se mantém focado exclusivamente nos desafios do seu próprio \textit{squad}, não sendo comum um intercâmbio de experiências entre os membros da área de design como um todo.
+    
+    Foram levantadas, ainda, situações em que decisões de design foram tomadas por profissionais de negócio, mesmo quando em desacordo do ponto de vista do designer responsável pela entrega. Devido à falta de autoridade da área, sendo um claro reflexo da imaturidade da mesma, a experiência do usuário acaba sendo prejudicada em detrimento do cumprimento de prazos estabelecidos para entregas.
+\end{quote}
+
+\textbf{Questão 4:} Como você classifica a velocidade de desenvolvimento de novas interfaces de usuários atualmente? Por que?
+
+\begin{quote}
+    De maneira geral, está mais rápida do que o observado em momentos anteriores à definição dos processos inicias de design, porém poderia estar melhor caso existisse uma biblioteca de componentes bem estruturada.
+\end{quote}
+
+\textbf{Questão 5:} Você acredita que um \textit{design system} poderia ser uma opção plausível para alavancar a capacidade de escalabilidade do produto da empresa?
+
+\begin{quote}
+    De maneira unânime, sim.
+
+    A padronização de ferramentas e processos é, sem dúvidas, um excelente promotor do potencial de escalabilidade do produto. Estima-se que, com uma biblioteca de componentes bem estruturada, tarefas de prototipação seriam executadas 4 vezes mais rapidamente.
+    
+    Entende-se, entretanto, que a criação de um \textit{design system} é um projeto bastante ambicioso e complexo, fazendo-se necessário o envolvimento, preferencialmente exclusivo, de uma série de profissionais com nível avançado de senioridade. O resultado final do projeto é um artefato que tem a pretenção de resolver problemas de comunicação de toda uma organização, portanto sua concepção deve ser embasada nas dores de todos os grupos que compõem a empresa.
+    
+    Ressalta-se ainda que, o processo de criação de um \textit{design system} deve ser encarado como um produto e não um projeto. Para tanto, o mesmo deve estar em constante evolução, mantendo sua documentação viva e atualizada.
+\end{quote}
+
+\section{Desenvolvedores \textit{frontend}}
+\label{sec:entrevistasDevs}
+
+De acordo com o roteiro de entrevista ilustrado no Apêndice B deste projeto, os desenvolvedores avaliados foram submetidos a algumas perguntas genéricas onde puderam expor um pouco dos detalhes do seu dia-a-dia de trabalho. O \autoref{table:devsResearch} apresenta as características de cada um dos profissionais entrevistados.
+
+\begin{quadro}
+\centering
+\begin{tabular}{|m{4cm}|m{10cm}|} \hline
+	
+	\multicolumn{1}{|c|}{\bfseries Voluntário} & \multicolumn{1}{c|}{\bfseries Contexto} \\\hline
+	
+	 Desenvolvedor 1 & Profissional que teve mais contato com a base de código-fonte da plataforma. Com mais de 4 anos de colaboração com o produto, teve a oportunidade de participar de vários projetos da empresa. Atualmente, assume o desafio de liderança do \textit{squad} de suporte técnico da organização. \\\hline
+	 
+	 Desenvolvedor 2 & Principal desenvolvedor do \textit{squad} responsável por manter um dos mais recentes e promissores produtos da empresa. Nesse projeto, teve a oportunidade de trabalhar com tecnologias mais inovadoras do que aquelas utilizadas na base de código-fonte legada da plataforma. \\\hline
+	 
+	 Desenvolvedor 3 & Mais novo colaborador do \textit{squad} de comunicação da empresa. Está a cerca de 2 meses assumindo o desafio de manter e evoluir sistemas legados de \textit{fronted} da plataforma. \\\hline
+    
+\end{tabular}
+\caption{Características dos desenvolvedores entrevistados}
+\fonte{Próprio autor}
+\label{table:devsResearch}
+\end{quadro}
+
+A seguir, são apresentados os resultados consolidados de perguntas chave realizadas nas entrevistas.
+
+\textbf{Questão 1:} Contextualize, brevemente, a maneira como os processos de desenvolvimento \textit{frontend} são adotados na empresa, atualmente.
+
+\begin{quote}
+    Em momentos anteriores à definição dos primeiros processos de design, era papel do desenvolvedor definir e implementar as interfaces de usuário. Não havia nenhuma atividade de pesquisa e validação com os usuários finais.
+    
+    A partir de então, especificações de páginas web já vêm sendo realizadas por profissionais especializadas e compartilhadas com o desenvolvedor por meio de ferramentas como Sketch e Zeplin. Percebeu-se, como consequência da adoção de tais ferramentas e processo, uma considerável melhoria na velocidade de desevolvimento e da qualidade final das telas.
+    
+    Após a implementação das interfaces, inicia-se uma fase de validação do artefato em um ambiente controlado chamado de \textit{staging}. Nesse ambiente, o designer certifica-se de que o foi produzido está realmente de acordo com suas especificações.
+    
+    Caso aprovado, o código-fonte produzido é incorporado à plataforma e começa a gerar valor para o usuário final.
+\end{quote}
+
+\textbf{Questão 2:} Quais as maiores dificuldades e frustrações que você encontra na plataforma durante o desenvolvimento de suas atividades?
+
+\begin{quote}
+    A maioria das frustrações apresentadas pelos voluntários residem na atual estrutura do principal produto da empresa, conhecido como \textit{dashboard}. Trata-se de um projeto legado, que teve o início de sua construção iniciado à cerca de 7 anos atrás e que utiliza uma \textit{stack} tecnológica atualmente bastante defasada.
+    
+    Como consequência da sua arquitetura degrada e pela falta de testes de interface no projeto, existe grande receio em se realizar alterações em alguns componentes, pois abre-se a possibilidade de ocorrência de efeitos colaterais inesperados e catastróficos. Por conta disso, é bastante comum encontrarmos diferentes soluções para um mesmo problema. Existe muito código-fonte duplicado ao longo do projeto.
+    
+    Não existe, ainda, nenhuma biblioteca de componentes bem definida que facilite o reuso de soluções já implementadas e padronize a forma como se constrói novas interfaces de usuário.
+\end{quote}
+
+\textbf{Questão 3:} Como você classifica a velocidade de desenvolvimento de novas interfaces de usuários atualmente? Por que?
+
+\begin{quote}
+    Está aquém do ideal. Tarefas de desenvolvimento \textit{frontend} são, em geral, bastante custosas de serem realizadas. Atividades que deveriam ser simples de serem executadas, normalmente não são.
+    
+    É necessário adquirir-se certa fluência com a estrutura e deficiências do projeto. Só assim é possível atingir uma velocidade de desenvolvimento satisfatória. Em geral, o tempo para se atingir tal fluência não é curto, muito por conta da complexidade da base de código-fonte da plataforma e do uso de uma \textit{stack} tecnológica defasada.
+\end{quote}
+
+\textbf{Questão 4:} De modo geral, como você classifica a atual arquitetura frontend da plataforma a nível de escalabilidade e reusabilidade?
+
+\begin{quote}
+    Levando em consideração a capacidade de escalabilidade do produto, houveram respostas contraditórias, uma vez que as mesmas foram embasadas em perspectivas distintas à respeito da arquitetura.
+    
+    Em um primeiro momento, foi levantado que a arquitura é escalável, pois o padrão MVC proposto pelo \textit{framework} utilizado na plataforma proporciona tal fenômeno. \textit{Frameworks} que oferecem mais flexibilidade na maneira como se organiza o projeto, podem contribuir para a construção de arquiteturas pouco escaláveis, uma vez que podem não existir padrões bem definidos no projeto como um todo.
+    
+    Em contrapartida, existe também a visão de que a plataforma é pouco escalável, pois há um forte acoplamento entre o \textit{backend} e o \textit{frontend}. A renderização das interfaces de usuários acontecem, muitas vezes, de maneira mista: parte acontece no universo \textit{frontend} e a outra parte no \textit{backend}. Esse tipo de exemplo de inconsistência é um fator recorrente em toda a plataforma, o que prejudica seu potencial de escalabilidade.
+    
+    No quesito reusabilidade, o parecer foi unânime. A plataforma é pouco reusável, apresentando várias ocorrências de duplicidade de código-fonte como alternativa para se evitar efeitos colaterais em cenários alternativos.
+\end{quote}
+
+\textbf{Questão 5:} Você já ouviu falar no termo \textit{design system}? Se sim, acredita que poderia ser uma abordagem plausível para impulsinar a capacidade de escalabilidade do produto da empresa?
+
+\begin{quote}
+    Novamente, de maneira unânime, sim.
+
+    Para se trabalhar em uma plataforma que cresce em velocidade recorde ano após ano, a existência de um \textit{design system} é fator fundamental para atingir as expectativas de velocidade aumejadas pela organização.
+    
+    Entretando, assim como o observado pelos designers, entende-se que a criação de um \textit{design system} completo é uma tarefa árdua. Necessita-se de profissionais qualificados e que estejam realmente focados em construir uma ferramenta tão ambiciosa assim.
+    
+    Para se mitigiar o fênomeno da degradação e defasamento das tecnologias adotadas, idealiza-se a contrução de uma bilbioteca de componentes de maneira desacoplada de tecnologias ou frameworks específicos. O ideal seria construir a biblioteca de componentes baseados nos chamados \textit{Web Components}. Dessa forma, migrações de tecnologias defasadas para tecnologias mais recentes acontecerão de maneira menos traumática, uma vez que não existe dependência alguma entre o legado e a biblioteca de componentes em si.
+    
+    Por fim, também foi apontada a preocupação de se manter as diretrizes expostas pelo \textit{design system} constantemente atualizadas, de forma a se evitar o seu desuso.
+\end{quote}
+
+Conforme observado pelas entrevistas, muitos dos problemas apresentados no capítulo 2 deste projeto, também se manifestam na empresa avaliada no experimento. Dada sua atual conjuntura, tal como a realidade do seu produto, a necessidade de criação de um \textit{design system} foi comprovada.
+
+No capítulo seguinte será apresentada a biblioteca de componentes criada, em um formato de protótipo, para se iniciar o processo de surgimento do novo \textit{design system} da organização.
