@@ -338,16 +338,68 @@
 % -----------------------------------------------------------------------------
 % Folha de aprovação
 % -----------------------------------------------------------------------------
+\providecommand{\imprimiravaliacaotrab}{}
+\newcommand{\avaliacaotrab}[1]{\renewcommand{\imprimiravaliacaotrab}{#1}}
+
+\providecommand{\imprimirorientadoravaliacao}{}
+\newcommand{\orientadoravaliacao}[1]{\renewcommand{\imprimirorientadoravaliacao}{#1}}
+
+\providecommand{\imprimirprofavaliacaoum}{}
+\newcommand{\profavaliacaoum}[1]{\renewcommand{\imprimirprofavaliacaoum}{#1}}
+
+\providecommand{\imprimirprofavaliacaodois}{}
+\newcommand{\profavaliacaodois}[1]{\renewcommand{\imprimirprofavaliacaodois}{#1}}
+
+\providecommand{\imprimirorinitprof}{}
+\newcommand{\initprof}[1]{\renewcommand{\imprimirorinitprof}{#1}}
+
+\providecommand{\imprimircorpoavaliacao}{}
+\newcommand{\corpoavaliacao}[1]{\renewcommand{\imprimircorpoavaliacao}{#1}}
+
 \makeatletter
 \newcommand{\imprimirfolhadeaprovacao}{%
     \begin{folhadeaprovacao}
-        \vspace*{\fill}
 
-        \begin{tabular}{p{.45\textwidth}p{.45\textwidth}}
-            & \imprimirtextopadraofolhadeaprovacao \\
-        \end{tabular}
+        \begin{center}
+            \normalfont\scshape{\imprimirinstituicao} \\
+            \normalfont\scshape{\imprimirprograma} \\
+            \normalfont\scshape{\imprimiravaliacaotrab} \\
+        \end{center}
+
+        \vspace*{20pt}
+
+        \begin{flushleft}
+            \normalfont\imprimircorpoavaliacao \\
+        \end{flushleft}
+
+        \vspace*{10pt}
+
+        \begin{center}
+            \normalfont\imprimirorinitprof \\
+        \end{center}
+
+        \vspace*{1pt}
+
+        \begin{center}
+            \normalfont\imprimirorientadoravaliacao \\
+        \end{center}
+        
+        \vspace*{2pt}
+            
+        \vspace*{2pt}
+            
+        \begin{center}
+            \normalfont\imprimirprofavaliacaoum \\
+        \end{center}
+        
+        \vspace*{2pt}
+        
+        \begin{center}    
+            \normalfont\imprimirprofavaliacaodois \\
+        \end{center}
 
         \vspace*{\fill}
+    
     \end{folhadeaprovacao}
     \PRIVATEclearpageifneeded
 }
