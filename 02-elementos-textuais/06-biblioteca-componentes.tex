@@ -7,7 +7,7 @@
 
 Conforme mencionado no \autoref{chap:metodologia} deste trabalho, foi proposta a criação de uma pequena biblioteca de componentes como protótipo para um possível \textit{design system} da empresa avaliada no experimento. Essa biblioteca seria construída a partir das definições de design tomadas para um projeto paralelo, intitulado \textit{DitoFeras}. O objetivo de tal projeto é administrar a gestão de colaboradores da empresa, sistema inexistente na organização até então.
 
-Como forma de se iniciar a criação do produto, foi executada uma técnica de \textit{brainstorming}, proposta pela metodologia de \textit{design sprint}, conhecida como \textit{Crazy Eights}. Para a execução da técnica, foram envolvidos cinco profissionais da empresa, sendo dois destes designers e os demais desenvolvedores. Tomando como base a ideia de criação de um sistema de gestão de funcionários, cada indivíduo recebeu uma folha de papel dividia em oito seções. O desafio seria preencher, em cinco minutos, cada uma das seções da folha com esboços de interfaces que poderiam compor o sistema aumejado. Ao final do tempo estabelecido, cada participate deveria apresentar e defender suas ideias. A \autoref{fig:crazy8} apresenta um dos exemplos de esboços construídos durante o procedimento.
+Como forma de se iniciar a criação do produto, foi executada uma técnica de \textit{brainstorming} \footnote{\textit{Brainstorming} é um método criado nos Estados Unidos, pelo publicitário Alex Osborn, usado para testar e explorar a capacidade criativa de indivíduos ou grupos, principalmente nas áreas de relações humanas, dinâmicas de grupo e publicidade e propaganda.}, proposta pela metodologia de \textit{design sprint}, conhecida como \textit{Crazy Eights}. Para a execução da técnica, foram envolvidos cinco profissionais da empresa, sendo dois destes designers e os demais desenvolvedores. Tomando como base a ideia de criação de um sistema de gestão de funcionários, cada indivíduo recebeu uma folha de papel dividia em oito seções. O desafio seria preencher, em cinco minutos, cada uma das seções da folha com esboços de interfaces que poderiam compor o sistema aumejado. Ao final do tempo estabelecido, cada participate deveria apresentar e defender suas ideias. A \autoref{fig:crazy8} apresenta um dos exemplos de esboços construídos durante o procedimento.
 
 \begin{figure}
 	\frame{\includegraphics[width=\linewidth]{./04-figuras/06_biblioteca_componentes/crazy8.jpg}}
@@ -16,11 +16,11 @@ Como forma de se iniciar a criação do produto, foi executada uma técnica de \
   \label{fig:crazy8}
 \end{figure}
 
-A atividade de \textit{brainstorming} foi de fato um sucesso, gerando como saída vários artefatos e ideias que serviram de gatilho para o novo produto. Durante o processo, foram definidos os primeiros entregáveis: uma tela de \textit{login} e uma tela de listagem de funcionários.
+A atividade de \textit{brainstorming} foi de fato um sucesso, gerando como saída vários artefatos e ideias que serviram de gatilho para o novo produto. Durante o processo, foi definido o primeiro entregável: a tela de \textit{login}.
 
 Partiu-se, enfim, para a criação da biblioteca de componentes que seria utilizada como base para o desenvolvimento do novo sistema. Seguindo a ideia da Ryte \cite{ryteDesignSystem}, optou-se por dividir a biblioteca de componentes em dois grandes artefatos: um guia de design e um repositório com as implementações dos componentes.
 
-A \autoref{fig:figma} ilustra a estrutura do guia de design produzido, já a \autoref{fig:sourceTree} apresenta a estrutura de arquivos do repositório que concentra as implementações dos componentes. Foi utilizado o Figma como ferramenta de criação do guia de design e o Angularjs como \textit{framework} base para implementação dos componentes. Percebe-se certa semelhança na forma como são organizadas as estruturas internas de cada artefato. Tal semelhança é reflexo do processo de co-criação do produto, onde os envolvidos no projeto tiveram participação ativa durante todo o processo, utilizando as mesmas terminologias para se referir aos componentes.
+A \autoref{fig:figma} ilustra a estrutura do guia de design produzido, já a \autoref{fig:sourceTree} apresenta a estrutura de arquivos do repositório que concentra as implementações dos componentes. Foi utilizado o Figma como ferramenta de criação do guia de design e o Angularjs \footnote{AngularJS é um framework JavaScript de código aberto, mantido pelo Google, que auxilia na execução de single-page applications.} como \textit{framework} base para implementação dos componentes. Percebe-se certa semelhança na forma como são organizadas as estruturas internas de cada artefato. Tal semelhança é reflexo do processo de co-criação do produto, onde os envolvidos no projeto tiveram participação ativa durante todo o processo, utilizando as mesmas terminologias para se referir aos componentes.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{./04-figuras/06_biblioteca_componentes/styleguide-figma.png}
@@ -73,7 +73,7 @@ Dos átomos listados, a paleta de cores é aquele que apresenta maior destaque, 
   \label{fig:colorPallet}
 \end{figure}
 
-Percebe-se que a implementação do átomo da paleta de cores se restringe a um arquivo \textit{SASS} com definições de cores em variáveis. Não deve haver, ao longo das implementações dos outros componentes, nenhuma atribuição de cor que não utilize as variáveis definidas por este átomo.
+Percebe-se que a implementação do átomo da paleta de cores se restringe a um arquivo \textit{Sass} \footnote{\textit{Sass} é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum. Disponível em <https://sass-lang.com>} com definições de cores em variáveis. Não deve haver, ao longo das implementações dos outros componentes, nenhuma atribuição de cor que não utilize as variáveis definidas por este átomo.
 
 \section{Moléculas}
 
@@ -112,7 +112,7 @@ Das moléculas listadas, o componente de botões é aquele que vale ser ressalta
 	 \textit{isDisabled} & \textit{boolean} & Informa se o botão está em um estado desabilitado, ou não. Quando desabilitado, ações de clique, por parte do usuário, são ignoradas. \\\hline
     
 \end{tabular}
-\caption{Interface de uso do componentes \textit{dito-button}}
+\caption{Interface de uso do componente \textit{dito-button}}
 \fonte{Próprio autor}
 \label{table:ditoButton}
 \end{quadro}

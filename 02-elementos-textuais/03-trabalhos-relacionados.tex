@@ -5,7 +5,7 @@
 \chapter{Trabalhos Relacionados}
 \label{chap:trabRelac}
 
-Neste capítulo são discutidos trabalhos que foram tomados como base para a construção do presente projeto. Levando em consideração que o tema abordado está sendo discutido e aplicado com bastante afinco na indústria de tecnologia, foram selecionados quatro trabalhos para análise, sendo deles um com viés acadêmico e os outros três com viés de mercado. 
+Neste capítulo são discutidos trabalhos que foram tomados como base para a construção do presente projeto. Levando em consideração que o tema abordado está sendo discutido e aplicado com bastante afinco na indústria de tecnologia, foram selecionados quatro trabalhos para análise, sendo um deles com viés acadêmico e os outros três com viés de mercado. 
 
 A primeira parte do capítulo é focada em apresentar a dissertação de mestrado de Miika Ruissalo, que trata-se de um estudo de viabilidade de implementação de \textit{design system} em uma grande empresa de tecnologia e telecomunicações finlandesa. Em seguida, são apresentados três casos de implementações do \textit{design system} em empresas consolidadas no mercado: Ryte, Gusto e Airbnb. Em cada um dos casos, foram destacadas as motivações e aprendizados adquiridos durante o processo de implementação.
 
@@ -26,7 +26,7 @@ O experimento teve duração de seis meses, período ao qual foram observados se
     
     \multicolumn{1}{|c|}{\bfseries Time} & \multicolumn{1}{c|}{\bfseries Contexto e Plataforma} & \multicolumn{1}{c|}{\bfseries Considerações importante} \\\hline
     
-     Time 1 & B2B - Web & Um designer do time criou parte considerável dos \textit{assets} do sistema \\\hline
+     Time 1 & B2B - Web & Um designer do time criou parte considerável dos \textit{assets} \footnote{O termo \textit{Asset} é normalmente utilizado para referenciar atributos como imagens, \textit{scripts} e folhas de estilo, comumente presentes em sistemas web.} do sistema \\\hline
      
      Time 2 & Mercado consumidor - Web e Mobile & Começou a utilizar tecnologias relevantes recentemente, incluindo o \textit{design system} \\\hline
      
@@ -42,12 +42,12 @@ O experimento teve duração de seis meses, período ao qual foram observados se
      
       
   \end{tabular}
-  \caption{Característica dos times estudados por \citeonline{ruissalo2018operating}}
-  \fonte{\citeonline{ruissalo2018operating}}
+  \caption{Características dos times estudados por \citeonline{ruissalo2018operating}}
+  \fonte{Adaptado de \citeonline{ruissalo2018operating}}
   \label{table:ruissaloTeams}
 \end{quadro}
 
-A metodologia adotada pela dissertação consistiu basicamente em duas grandes fases: observação e entrevistas. Na primeira fase, \citeonline{ruissalo2018operating} dedicou seu tempo à observar o dia-a-dia de cada um dos times selecionados, estando posicionado estratégicamente próximo de três destes. Na segunda fase, o pesquisador realizou entrevistas com dois grupos distintos de profissionais: designers e desenvolvedores. Cada grupo, portanto, experimentou um roteiro de entrevista diferente do outro.
+A metodologia adotada pela dissertação consistiu basicamente em duas grandes fases: observação e entrevistas. Na primeira fase, \citeonline{ruissalo2018operating} dedicou seu tempo a observar o dia-a-dia de cada um dos times selecionados, estando posicionado estratégicamente próximo de três destes. Na segunda fase, o pesquisador realizou entrevistas com dois grupos distintos de profissionais: designers e desenvolvedores. Cada grupo, portanto, experimentou um roteiro de entrevista diferente do outro.
 
 Como resultado do experimento, foi observado que uma das maiores dores dos profissionais de desenvolvimento de produto é a falta de uma fonte única da verdade. Esse foi um dos principais argumentos utilizado pelos times quando a empresa sob estudo optou por desenvolver seu \textit{design system}. A maioria dos benefícios apontados no \autoref{chap:fundamentacaoTeorica} do presente trabalho foi parceptível na empresa finlandesa, tanto na visão da organização quanto na visão dos designers e desenvolvedores. Consistência, poder de reusabilidade e velocidade no desenvolvimento foram características observadas no produto e nos times analisados pela dissertação, exemplificando assim a metodologia de \textit{design system} como um verdadeiro sucesso no desenvolvimento de produtos digitais em uma grande organização.
 
@@ -68,7 +68,8 @@ O segundo problema era um pouco mais grave: um processo de design lento e inefic
 
 Por fim, o último ponto a ser resolvido era a falta de identidade de marca no mercado. Além de inconsistências na plataforma, não havia co-relação alguma entre os mecanismos de marketing e a plataforma em si.
 
-Inspirada em empresas como Shopify, Atlassian e Hubspot, a Ryte buscou na metodologia do \textit{design system} uma solução para os seus problemas. A abordagem utilizada consistia basicamente em dois componentes: um arquivo Sketch e um repositório Git compartilhados. Percebe-se que não foram abordados fatores como tom de voz e princípios de design nessa primeira versão. Além disso, não existe interligação clara entre artefatos de design e artefatos de desenvolvimento e a justificativa para tal decisão reside no fato de que o time identificou problemas de escalabilidade ao se unir os dois mundos.
+Inspirada em empresas como Shopify, Atlassian e Hubspot, a Ryte buscou na metodologia do \textit{design system} uma solução para os seus problemas. A abordagem utilizada consistia basicamente em dois componentes: um arquivo Sketch \footnote{O Sketch é uma ferramenta de design gráfico voltada para prototipação de interfaces de usuário
+desenvolvida pela Bohemian BV, e é disponibilizada em <https://www.sketchapp.com/>.} e um repositório Git \footnote{O Git é um sistema de controle de versões distribuído. Normalmente é usado no desenvolvimento de software, mas pode ser utilizado para registrar o histórico de edições de qualquer tipo de arquivo.} compartilhados. Percebe-se que não foram abordados fatores como tom de voz e princípios de design nessa primeira versão. Além disso, não existe interligação clara entre artefatos de design e artefatos de desenvolvimento e a justificativa para tal decisão reside no fato de que o time identificou problemas de escalabilidade ao se unir os dois mundos.
 
 Como resultado imediato da implementação do \textit{design system} percebeu-se: processo de design oito vezes mais rápido, mais velocidade no desenvolvimento de novas funcionalidades e um maior poder de escalabilidade. \citeonline{ryteDesignSystem} ainda compartilha no artigo alguns dos aprendizados que o time vivenciou ao longo do processo. Tais aprendizados são consolidados e apresentados no \autoref{table:ryteLessonsLearned}.
 
@@ -90,7 +91,7 @@ Como resultado imediato da implementação do \textit{design system} percebeu-se
       
   \end{tabular}
   \caption{Aprendizados da implementação do \textit{design system} da Ryte.}
-  \fonte{\citeonline{ryteDesignSystem}}
+  \fonte{Adaptado de \citeonline{ryteDesignSystem}}
   \label{table:ryteLessonsLearned}
 \end{quadro}
 
@@ -121,7 +122,7 @@ Foi nesse momento que Rendle decidiu, de maneira proativa, iniciar os trabalhos 
     
 \end{tabular}
 \caption{Aprendizados da implementação do \textit{design system} da Gusto}
-\fonte{\citeonline{gustoDesignSystem}}
+\fonte{Adaptado de \citeonline{gustoDesignSystem}}
 \label{table:gustoLessonsLearned}
 \end{quadro}
 
@@ -139,7 +140,7 @@ Rendle finaliza seu artigo destacando uma das vantagens de se implementar um \te
 
 Como último exemplo de trabalho relacionado ao presente documento, será apresentado o estudo de caso de implementação do \textit{design system} da Airbnb. Com sede em San Francisco - California, Estados Unidos, a Airbnb é uma famosa empresa que opera um mercado on-line global de serviços de hospedagem acessível através de seu site e aplicativo para dispositivos móveis.
 
-No artigo \textit{Building a Visual Language}, produzido por Karri Saarinen e disponibilizado diretamente no site oficial da empresa, discorre-se sobre a trajetória de criação do sistema, poderando-se suas motivações e aprendizados adquiridos ao longo do processo.
+No artigo \textit{Building a Visual Language}, produzido por \citeonline{airbnbDesignSystem} e disponibilizado diretamente no site oficial da empresa, discorre-se sobre a trajetória de criação do sistema, poderando-se suas motivações e aprendizados adquiridos ao longo do processo.
 
 Devido ao seu crescimento acelerado, problemas de escalabilidade do produto surgiram rapidamente, conforme a empresa conquistava maiores parcelas do seu mercado e aumentava o tamanho de sua equipe de desenvolvimento.
 
@@ -151,7 +152,7 @@ Outro fator motivador para a criação do \textit{design system} foi a necessida
 
 Para sanar os problemas citados, a Airbnb decidiu por construir o seu próprio \textit{design system}. O processo de criação foi exaustivo, porém o resultado final foi um sucesso. Dos exemplos citados no presente trabalho, o \textit{design system} da Airbnb é, sem dúvidas, o mais completo. Nele, além da biblioteca de componentes, também foram trabalhados os artefatos de princípios de design e tom de voz. Por isso, o trabalho realizado pela Airbnb é hoje uma das referências do mercado no que se diz respeito a \textit{design systems}.
 
-Saarinen também compartilha alguns dos aprendizados adquiridos pela sua equipe no artigo. Tais aprendizados foram consolidados no \autoref{table:airbnbLessonsLearned}.
+\citeonline{airbnbDesignSystem} também compartilha alguns dos aprendizados adquiridos pela sua equipe no artigo. Tais aprendizados foram consolidados no \autoref{table:airbnbLessonsLearned}.
 
 \begin{quadro}
 \centering
@@ -165,7 +166,7 @@ Saarinen também compartilha alguns dos aprendizados adquiridos pela sua equipe 
     
 \end{tabular}
 \caption{Aprendizados da implementação do \textit{design system} da Airbnb}
-\fonte{\cite{airbnbDesignSystem}}
+\fonte{Adaptado de \cite{airbnbDesignSystem}}
 \label{table:airbnbLessonsLearned}
 \end{quadro}
 

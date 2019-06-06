@@ -14,7 +14,7 @@ No \autoref{chap:entrevistas} deste trabalho, foi apresentada detalhadamente uma
 
 Tomando como base as experiências compartilhadas pelos entrevistados e o \autoref{table:uxMaturity}, entende-se que a empresa avaliada encontra-se no terceiro estágio de maturidade em experiência do usuário: Embrionária. Tal classificação é justificada pelo fato de que, apesar de já existirem profissionais especializados que se preocupam com a experiência do usuário, atividades de planejamento e metrificação de valores de UX ainda não acontecem com consistência. Também não existe nenhum profissional focado em definir e disseminar diretrizes de design e UX a nível organizacional. Dessa forma, fica evidente que ainda existe um longo caminho a ser percorrido pela organização no que se diz respeito à evolução de sua maturidade de UX, e para que isso ocorra, o comprometimento de toda a organização tem vital importância.
 
-Como forma de se medir quantitativamente o nível de satisfação dos entrevistados para com o produto da empresa, foi realizada uma simples pesquisa com os envolvidos. A pesquisa, apresentada no Anexo \ref{chap:anexoC} deste projeto, indagava, em uma escala de 1 a 10, qual o nível de satisfação do entrevistado em relação a 3 aspectos chave do produto da empresa: capacidade de escalabilidade, capacidade de reusabilidade e velocidade de desenvolvimento. A \autoref{fig:productMetrics} apresenta os resultados obtidos pela pesquisa.
+Como forma de se medir quantitativamente o nível de satisfação dos entrevistados para com o produto da empresa, foi realizada uma simples pesquisa com os envolvidos. A pesquisa, apresentada no Anexo \ref{chap:anexoC} deste projeto, indagava, em uma escala de 1 a 10, qual o nível de satisfação do entrevistado em relação a três aspectos chave do produto da empresa: capacidade de escalabilidade, capacidade de reusabilidade e velocidade de desenvolvimento. A \autoref{fig:productMetrics} apresenta os resultados obtidos pela pesquisa.
 
 \begin{figure}
   \begin{center}
@@ -28,26 +28,26 @@ Como forma de se medir quantitativamente o nível de satisfação dos entrevista
 Para traduzir os resultados da pesquisa em um número único que reflita a atual realidade da arquitetura do produto da empresa, foi utilizada a metodologia do NPS. Em termos gerais, o \textit{Net Promoter Score} (NPS) trata-se de uma pesquisa de satisfação criada em 2003 por Fred Reichheld que, por ser simples e de fácil aplicação, acabou sendo adotada por muitas empresas, tornando-se um método universal de avaliação da satisfação de clientes \cite{nps}. Para a metodologia, as respostas da pesquisa são classificadas em 3 grupos:
 
 \begin{itemize}
-  \item Promotores: Nota 9 ou 10
-  \item Neutros: Nota 7 ou 8
-  \item Detratores: Notas de 1 a 6
+  \item Promotores: Nota 9 ou 10;
+  \item Neutros: Nota 7 ou 8;
+  \item Detratores: Notas de 1 a 6.
 \end{itemize}
 
 Para o calculo do NPS, utiliza-se a seguinte fórmula:
 \begin{center}
-  \textbf{(Promotores - Detratores) / total de respondentes}.    
+  \textbf{(Promotores - Detratores) / total de respondentes}    
 \end{center}{}
 
 A metodologia ainda classifica os possíveis resultados do cálculo do NPS em quatro grupos:
 
 \begin{itemize}
-  \item Zona de excelência: 75\% -- 100\%
-  \item Zona de qualidade: 50\% -- 74\%
-  \item Zona de aperfeiçoamento: 0\% -- 49\%
-  \item Zona crítica: -100\% -- -1\%
+  \item Zona de excelência: 75\% -- 100\%;
+  \item Zona de qualidade: 50\% -- 74\%;
+  \item Zona de aperfeiçoamento: 0\% -- 49\%;
+  \item Zona crítica: -100\% -- -1\%.
 \end{itemize}
 
-A \autoref{table:productNPS} apresenta o cálculo do NPS para as 3 diretrizes consultadas. A partir dela, conclui-se que a arquitetura do produto da empresa encontra-se em uma zona crítica, implicando que medidas devem ser tomadas o quanto antes para que a atual realidade seja revertida.
+A \autoref{table:productNPS} apresenta o cálculo do NPS para as três diretrizes consultadas. A partir dela, conclui-se que a arquitetura do produto da empresa encontra-se em uma zona crítica, implicando que medidas devem ser tomadas o quanto antes para que a atual realidade seja revertida.
 
 \begin{table}
   \centering
@@ -68,7 +68,7 @@ A \autoref{table:productNPS} apresenta o cálculo do NPS para as 3 diretrizes co
 
 \section{Protótipo da biblioteca de componentes}
 
-Para avaliar o valor do protótipo de biblioteca de componentes desenvolvido, foram levantadas duas métricas base para a análise: nível de consistência das interfaces e quantidade de linhas de código-fonte. As subseções a seguir detalham cada uma das métricas, levando em consideração o atual cenário do produto da Dito e o protótipo implementado.
+Para avaliar o valor do protótipo de biblioteca de componentes desenvolvido, foram levantadas duas métricas base para a análise: nível de consistência das interfaces e quantidade de linhas de código-fonte produzidas. As subseções a seguir detalham cada uma das métricas, levando em consideração o atual cenário do produto da Dito e o protótipo implementado.
 
 \subsection{Consistência nas interfaces de usuário}
 
@@ -80,7 +80,7 @@ Para medir a consistência em interfaces de usuário, foi realizada uma contagem
     
     \multicolumn{1}{|c|}{\bfseries Sistema} & \multicolumn{1}{c|}{\bfseries Cores} & \multicolumn{1}{c|}{\bfseries Cores de fundo} & \multicolumn{1}{c|}{\bfseries Famílias de fonte} & \multicolumn{1}{c|}{\bfseries Tamanhos de fonte} \\\hline
     
-    Principal produto da Dito & 63 & 88 & 4 & 41 \\\hline
+    \textit{Dito CRM} (legado) & 63 & 88 & 4 & 41 \\\hline
     \textit{Dito Feras} & 12 & 7 & 1 & 7 \\\hline
       
   \end{tabular}
@@ -89,11 +89,11 @@ Para medir a consistência em interfaces de usuário, foi realizada uma contagem
   \label{table:interfaceConsistence}
 \end{table}
 
-Obviamente, comparar friamente os números dos dois sistemas não seria adequado, uma vez que o produto da empresa avaliada é muito maior e mais complexo do que o protótipo construído por este trabalho. Entretanto, contanto que a biblioteca de componentes continue evoluindo de maneira saudável, espera-se que as inconsistências evidenciadas no principal produto da Dito não se manifestem em sistemas construídos a partir de tal biblioteca.
+Obviamente, comparar friamente os números dos dois sistemas não seria adequado, uma vez que o produto da empresa avaliada é muito maior e mais complexo do que o protótipo construído por este trabalho. Entretanto, contanto que a biblioteca de componentes continue evoluindo de maneira saudável, espera-se que as inconsistências evidenciadas pelo \textit{Dito CRM} não se manifestem em sistemas construídos a partir de tal biblioteca.
 
 \subsection{Quantidade de linhas de código-fonte}
 
-Para medir fatores como velocidade de desenvolvimento, capacidade de reusabilidade e capacidade de escalabilidade, optou-se por utilizar a métrica de quantidade de linhas de código-fonte necessárias para a implementação de uma dada funcionalidade. Nesse contexto, a \autoref{table:lineCountDitoFeras} apresenta a quantidade de linhas de código-fonte utilizadas para construir artefatos do sistema \textit{DitoFeras}, já a \autoref{table:lineCountDito} faz a mesma análise levando em consideração quatro interfaces de usuários recentemente implementadas no produto da Dito.
+Para medir fatores como velocidade de desenvolvimento, capacidade de reusabilidade e capacidade de escalabilidade, optou-se por utilizar a métrica de quantidade de linhas de código-fonte necessárias para a implementação de uma dada funcionalidade. Nesse contexto, a \autoref{table:lineCountDitoFeras} apresenta a quantidade de linhas de código-fonte utilizadas para construir artefatos do sistema \textit{DitoFeras}, já a \autoref{table:lineCountDito} faz a mesma análise levando em consideração quatro interfaces de usuários recentemente implementadas no \textit{Dito CRM}.
 
 \begin{table}
 \centering
@@ -150,8 +150,8 @@ Dada a simplicidade percebida no desenvolvimento de páginas baseadas em compone
 
 Ressalta-se, entretanto, que a escolha da tecnologia utilizada para a construção do protótipo foi falha. A empresa avaliada no experimento tinha pretenções de evoluir sua arquitetura \textit{frontend}, alterando o \textit{framework} base de suas implementações. Como a biblioteca de componentes foi construida utilizando um \textit{framework} diferente, seria inviável aproveitar o trabalho realizado na construção do protótipo em uma futura biblioteca de componentes oficial da organização.
 
-Sabe-se que o ecossistema de tecnologia está em constante evolução. Novas tecnologias surgem a cada dia e, consequentemente, as tecnologias de ponta de hoje acabarão se tornando defasadas no futuro. Nesse contexto, entendeu-se a criação de um sistema tão importante como uma biblioteca de componentes baseado em um \textit{framework} específico não é uma decisão sustentável a longo prazo. A utilização de tecnologias como \textit{Web Components} talvez seja uma decisão mais sábia, uma vez que esta é baseada em padrões universais da Web.
+Sabe-se que o ecossistema de tecnologia está em constante evolução. Novas tecnologias surgem a cada dia e, consequentemente, as tecnologias de ponta de hoje acabarão se tornando defasadas no futuro. Nesse contexto, entendeu-se que a criação de um sistema tão importante como uma biblioteca de componentes baseado em um \textit{framework} específico não é uma decisão sustentável a longo prazo. A utilização de tecnologias como \textit{Web Components} talvez seja uma decisão mais sábia, uma vez que esta é baseada em padrões universais da Web.
 
-Como consequência do presente trabalho, foi criado um grupo de estudos na empresa avaliada no experimento. O objetivo principal do grupo é disseminar conhecimentos a respeito dos propósitos e valores de um \textit{design system}. Foi realizada, ainda, uma atividade de descontrução de um dos mais recentes produtos da empresa, com o intuito de idealizar o esqueleto de uma biblioteca de componentes que siga os princípios do \textit{atomic design}.
+Como consequência do presente trabalho, foi criado um grupo de estudos na empresa avaliada no experimento. O objetivo principal do grupo é disseminar conhecimentos a respeito dos propósitos e valores de um \textit{design system}. Foi realizada, ainda, uma atividade de descontrução de um dos mais recentes produtos da empresa, o \textit{Dito PDV}, com o intuito de idealizar o esqueleto de uma biblioteca de componentes que siga os princípios do \textit{atomic design}.
 
 Finalmente, conclui-se que um \textit{design system} é uma importante ferramenta para a diminuição da complexidade social de uma organização, promovendo melhorias na comunicação entre os colaboradores desde os momentos iniciais de sua implementação. Além disso, também se provou fundamental para a alavancagem da capacidade de escalabilidade, reusabilidade e velocidade de desenvolvimento de produtos baseados em software.
