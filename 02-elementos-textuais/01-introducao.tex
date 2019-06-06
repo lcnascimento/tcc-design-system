@@ -7,9 +7,9 @@
 
 O valor do design de produto só começou a ser reconhecido recentemente perante a indústria de software moderna. Na virada do último milênio, a experiência do usuário (UX) era simplismente negligenciada, não sendo tratada como uma prioridade de negócio para a maioria das empresas de tecnologia. Entretanto, conforme as tecnologias foram amadurecendo e a competição entre empresas de desenvolvimento de software se tornaram mais acirradas, o design e a experiência do usuário começaram a conquistar o seu espaço \cite{ruissalo2018operating}.
 
-Ao mesmo tempo, escalar efetivamente os processos de design e desenvolvimento de software em grandes empresas não é tarefa simples. Conforme uma organização expande seu negócios, incrementando a quantidade de produtos e serviços oferecidos por meio do aumento do número de funcionários, novas problemas tendem a se manifestar. O gerenciamento do conhecimento compartilhado entre os diferentes times de uma organização é um problema comumente enfrentado por grandes empresas de desenvolvimento de software que adotam metodologias de desenvolvimento ágil. Problemas como reusabilidade de soluções e consistência em experiência do usuário logo começam a se manifestar \cite{ruissalo2018operating}.
+Ao mesmo tempo, escalar efetivamente os processos de design e desenvolvimento de software em grandes empresas não é tarefa simples. Conforme uma organização expande seus negócios, incrementando a quantidade de produtos e serviços oferecidos por meio do aumento do número de funcionários, novos problemas tendem a se manifestar. O gerenciamento do conhecimento compartilhado entre os diferentes times de uma organização é um problema comumente enfrentado por grandes empresas de desenvolvimento de software que adotam metodologias de desenvolvimento ágil. Problemas como reusabilidade de soluções e consistência em experiência do usuário logo começam a se manifestar \cite{ruissalo2018operating}.
 
-Com o intuito de remediar problemas de reuso e consistência em interfaces de usuário, surgiram bibliotecas de componentes no universo de desenvolvimento e guias de estilo no universo do design \cite{ruissalo2018operating}. Entretanto, pela maneira como era construídos, tais artefatos não alcançavam seu propósito no longo termo, pois não havia conexão alguma entre ambos \cite{ruissalo2018operating}.
+Com o intuito de remediar problemas de reuso e consistência em interfaces de usuário, surgiram bibliotecas de componentes no universo de desenvolvimento e guias de estilo no universo do design. Entretanto, pela maneira como era construídos, tais artefatos não alcançavam seu propósito no longo termo, pois não havia conexão alguma entre ambos \cite{ruissalo2018operating}.
 
 Recentemente, como meio de aproximação entre os contextos de desenvolvimento e design, um novo conceito emergiu da indústria: \textit{design system} \cite{kholmatova2017design}.
 
@@ -18,30 +18,30 @@ Recentemente, como meio de aproximação entre os contextos de desenvolvimento e
 
 O termo \textit{time to marketing}, cada dia mais frequente no vocabulário de profissionais de produtos de tecnologia, reflete bem a realidade de um mercado acelerado e competitivo que é presenciado atualmente. Representa o intervalo de tempo entre a ideação e o lançamento de um produto, e espera-se que seja o quão curto possível. Fato é que, tal expectativa muitas vezes é frustrada por conta de uma arquitetura degradada, pouco escalável e pouco reusável dos sistemas.
 
-Além disso, estudos comprovam que a maior parcela dos custos envolvidos em um sistema de software está concentrado em atividades de manutenção do produto \cite{softwareCost}. Em uma realidade de mercado onde os profissionais especializados em desenvolvimento de software estão cada dia mais valorizados, manter um sistema de difícil manutenção é bastante custoso.
+Além disso, estudos comprovam que a maior parcela dos custos envolvidos em um sistema de software está concentrada em atividades de manutenção do produto \cite{softwareCost}. Em uma realidade de mercado onde os profissionais especializados em desenvolvimento de software estão cada dia mais valorizados, manter um sistema de difícil manutenção é bastante custoso.
 
 \section{Motivação}
 \label{sec:motivacao}
 
-Como colaborador ativo de uma promissora empresa de tecnologia, o autor deste trabalho identificou na plataforma que manuseia diariamente, problemas arquiteturais que criam barreiras para a evolução do produto e, consequentemente, crescimento da organização. Ciente de que medidas deveriam ser tomadas imediatamente para reverter o atual cenário, foi realizado o presente trabalho afim de se encontrar alguma alternativa para os empencilhos identificados.
+Como colaborador ativo de uma promissora empresa de tecnologia, o autor deste trabalho identificou na plataforma que manuseia diariamente, problemas arquiteturais que criam barreiras para a evolução do produto e, consequentemente, dificultam o crescimento da organização. Ciente de que medidas deveriam ser tomadas imediatamente para reverter o atual cenário, foi realizado o presente trabalho afim de se encontrar e propor alguma alternativa para os empencilhos identificados.
 
 \section{Objetivos}
 \label{sec:objetivos}
 
 \subsection{Objetivo Geral}
 
-O objetivo principal deste trabalho é comprovar a hipótese de que a implementação de um \textit{design system} em uma empresa de médio porte, é uma solução viável para problemas de escalabilidade de um produto estruturado por uma arquitetura degradada. Espera-se que ao final do projeto, o valor do \textit{design system} como ferramenta de centralização de conhecimento e padronização de artefatos de desenvolvimento seja reconhecido pela empresa em questão e que trabalhos sejam iniciados em direção ao seu desenvolvimento.
+O objetivo principal deste trabalho é comprovar a hipótese de que a implementação de um \textit{design system} em uma empresa de médio porte é uma solução viável para problemas de escalabilidade de um produto estruturado por uma arquitetura degradada. Espera-se que, ao final do projeto, o valor do \textit{design system} como ferramenta de centralização de conhecimento e padronização de artefatos de desenvolvimento seja reconhecido pela empresa em questão e que trabalhos sejam iniciados em direção ao seu desenvolvimento.
 
 \subsection{Objetivos Específicos}
 
 \begin{enumerate}
-    \item Entrevistar designers e desenvolvedores \textit{frontend} da empresa, afim de entender as principais dores e frustrações por eles percebidas ao executar suas atividades diárias.
-    \item Validar se os problemas identificados pelos os entrevistados são resolvidos por meio da implamentação de um \textit{design system}, de acordo com a literatura.
-    \item Implementar o protótipo de uma biblioteca de componentes simples que consiga evidenciar as principais vantagens de se contruir interfaces de usuários baseadas em componentes desenvolvidos previamente.
+    \item Entrevistar designers e desenvolvedores \textit{frontend} da empresa, afim de entender as principais dores e frustrações por eles percebidas ao executar suas atividades diárias;
+    \item Validar se os problemas identificados pelos os entrevistados são resolvidos por meio da implementação de um \textit{design system}, de acordo com a literatura;
+    \item Implementar o protótipo de uma biblioteca de componentes simples que consiga evidenciar as principais vantagens de se construir interfaces de usuários baseadas em componentes desenvolvidos previamente.
 \end{enumerate}{}
 
 \section{Organização do trabalho}
 \label{sec:organizacaoTrabalho}
 
-Este trabalho foi organizado em 9 grandes capítulos, sendo a introdução o primeiro deles. No segundo capítulo serão discutidos alguns dos fundamentos teórico-conceituais mais importantes para a contextualização do leitor ao problema abordado. Logo em seguida, no capítulo 3, serão apresentados alguns dos trabalhos relacionados ao tema deste projeto, que foram divulgados na literatura e na indústria, e formam a principal referência para a sua construção. No capítulo 4 é apresentada a metodologia utilizada para o desenvolvimento do trabalho. Os capítulos 5, 6 e 7 são destinados a entrevistas com \textit{stakeholders}, desenvolvimento do protótipo de biblioteca de componentes e desenvolvimento de páginas web embasadas nesta biblioteca, respectivamente. A avaliação dos resultados obtidos ao longo do desenvolvimento do trabalho é discutida no capítulo 8, seguida das conclusões no Capítulo 9.
+Este trabalho foi organizado em nove grandes capítulos. No \autoref{chap:fundamentacaoTeorica} são discutidos alguns dos fundamentos teórico-conceituais mais importantes para a contextualização do leitor ao problema abordado. Em seguida, no \autoref{chap:trabRelac}, são apresentados alguns dos trabalhos relacionados ao tema deste projeto, que foram divulgados na literatura e na indústria, e formam a principal referência para a sua construção. No \autoref{chap:metodologia} é apresentada a metodologia utilizada para o desenvolvimento do trabalho. Os capítulos \ref{chap:entrevistas}, \ref{chap:bibComponentes} e \ref{chap:devWeb} são destinados a entrevistas com \textit{stakeholders}, desenvolvimento do protótipo de biblioteca de componentes e desenvolvimento de páginas web embasadas nesta biblioteca, respectivamente. A avaliação dos resultados obtidos ao longo do desenvolvimento do trabalho é discutida no \autoref{chap:resultados}, seguida das conclusões no \autoref{chap:conclusao}.
 

@@ -5,9 +5,9 @@
 \chapter{Biblioteca de componentes}
 \label{chap:bibComponentes}
 
-Conforme mencionado no capítulo 4 deste trabalho, foi proposta a criação de uma pequena biblioteca de componentes como protótipo para um possível \textit{design system} da empresa avaliada no experimento. Essa biblioteca seria construída a partir das definições de design tomadas para um projeto paralelo, intitulado \textit{DitoFeras}. O objetivo de tal projeto é administrar a gestão de colaboradores da empresa, sistema inexistente na organização até então.
+Conforme mencionado no \autoref{chap:metodologia} deste trabalho, foi proposta a criação de uma pequena biblioteca de componentes como protótipo para um possível \textit{design system} da empresa avaliada no experimento. Essa biblioteca seria construída a partir das definições de design tomadas para um projeto paralelo, intitulado \textit{DitoFeras}. O objetivo de tal projeto é administrar a gestão de colaboradores da empresa, sistema inexistente na organização até então.
 
-Como forma de se iniciar a criação do produto, foi executada uma técnica de \textit{brainstorming}, proposta pela metodologia de \textit{design sprint}, conhecida como \textit{Crazy Eights}. Para a execução da técnica, foram envolvidos 5 profissionais da empresa, sendo 2 destes designers e os demais desenvolvedores. Tomando como base a idéia de criação de um sistema de gestão de funcionários, cada indivíduo recebeu uma folha de papel dividia em 8 seções. O desafio seria preencher, em 5 minutos, cada uma das seções da folha com esboços de interfaces que poderiam compor o sistema aumejado. Ao final dos 5 minutos, cada participate deveria apresentar e defender suas idéias. A \autoref{fig:crazy8} apresenta um dos exemplos de esboços construídos durante o procedimento.
+Como forma de se iniciar a criação do produto, foi executada uma técnica de \textit{brainstorming}, proposta pela metodologia de \textit{design sprint}, conhecida como \textit{Crazy Eights}. Para a execução da técnica, foram envolvidos cinco profissionais da empresa, sendo dois destes designers e os demais desenvolvedores. Tomando como base a ideia de criação de um sistema de gestão de funcionários, cada indivíduo recebeu uma folha de papel dividia em oito seções. O desafio seria preencher, em cinco minutos, cada uma das seções da folha com esboços de interfaces que poderiam compor o sistema aumejado. Ao final do tempo estabelecido, cada participate deveria apresentar e defender suas ideias. A \autoref{fig:crazy8} apresenta um dos exemplos de esboços construídos durante o procedimento.
 
 \begin{figure}
 	\frame{\includegraphics[width=\linewidth]{./04-figuras/06_biblioteca_componentes/crazy8.jpg}}
@@ -16,9 +16,9 @@ Como forma de se iniciar a criação do produto, foi executada uma técnica de \
   \label{fig:crazy8}
 \end{figure}
 
-A atividade de \textit{brainstorming} foi de fato um sucesso, gerando como saída vários artefatos e idéias que serviram de gatilho para o novo produto. Durante o processo, foram definidos os primeiros entregáveis: uma tela de \textit{login} e uma tela de listagem de funcionários.
+A atividade de \textit{brainstorming} foi de fato um sucesso, gerando como saída vários artefatos e ideias que serviram de gatilho para o novo produto. Durante o processo, foram definidos os primeiros entregáveis: uma tela de \textit{login} e uma tela de listagem de funcionários.
 
-Partiu-se, enfim, para a criação da biblioteca de componentes que seria utilizada como base para o desenvolvimento do novo sistema. Seguindo a idéia da Ryte \cite{ryteDesignSystem}, optou-se por dividir a biblioteca de componentes em 2 grandes artefatos: um guia de design e um repositório com as implementações dos componentes.
+Partiu-se, enfim, para a criação da biblioteca de componentes que seria utilizada como base para o desenvolvimento do novo sistema. Seguindo a ideia da Ryte \cite{ryteDesignSystem}, optou-se por dividir a biblioteca de componentes em dois grandes artefatos: um guia de design e um repositório com as implementações dos componentes.
 
 A \autoref{fig:figma} ilustra a estrutura do guia de design produzido, já a \autoref{fig:sourceTree} apresenta a estrutura de arquivos do repositório que concentra as implementações dos componentes. Foi utilizado o Figma como ferramenta de criação do guia de design e o Angularjs como \textit{framework} base para implementação dos componentes. Percebe-se certa semelhança na forma como são organizadas as estruturas internas de cada artefato. Tal semelhança é reflexo do processo de co-criação do produto, onde os envolvidos no projeto tiveram participação ativa durante todo o processo, utilizando as mesmas terminologias para se referir aos componentes.
 
@@ -117,7 +117,7 @@ Das moléculas listadas, o componente de botões é aquele que vale ser ressalta
 \label{table:ditoButton}
 \end{quadro}
 
-Pode-se perceber que o componentes \textit{dito-button} possui um mecanismo de estado associado. Dessa forma, o comportamento do componente depende diretamente do estado atual do mesmo. A \autoref{fig:buttons} ilustra o componente nos seus 6 diferentes tipos de estado.
+Pode-se perceber que o componentes \textit{dito-button} possui um mecanismo de estado associado. Dessa forma, o comportamento do componente depende diretamente do estado atual do mesmo. A \autoref{fig:buttons} ilustra o componente nos seus seis diferentes tipos de estado.
 
 \begin{figure}
   \begin{center}
@@ -130,7 +130,7 @@ Pode-se perceber que o componentes \textit{dito-button} possui um mecanismo de e
 
 \section{Organismos}
 
-Organismos são grupos de moléculas que, juntas, formam uma seção relativamente complexa e distinta da interface de usuário. Até o momento em que o presente trabalho foi escrito, o único organismo implementado no sistema foi o \textit{dito-form}, que encapsula lógicas de validação de formulários de envio de dados para o servidor. A \autoref{fig:forms} ilustra um formulário de \textit{login} em 3 diferentes estados.
+Organismos são grupos de moléculas que, juntas, formam uma seção relativamente complexa e distinta da interface de usuário. Até o momento em que o presente trabalho foi escrito, o único organismo implementado no sistema foi o \textit{dito-form}, que encapsula lógicas de validação de formulários de envio de dados para o servidor. A \autoref{fig:forms} ilustra um formulário de \textit{login} em três diferentes estados.
 
 \begin{figure}
   \begin{center}
