@@ -5,9 +5,9 @@
 \chapter{Trabalhos Relacionados}
 \label{chap:trabRelac}
 
-Neste capítulo são discutidos trabalhos que foram tomados como base para a construção do presente projeto. Levando em consideração que o tema abordado está sendo discutido e aplicado com bastante afinco na indústria de tecnologia, foram selecionados quatro trabalhos para análise, sendo um deles com viés acadêmico e os outros três com viés de mercado. 
+Neste capítulo são discutidos trabalhos que foram tomados como base para a construção do presente projeto. Levando em consideração que o tema abordado está sendo discutido e aplicado na indústria de tecnologia, foram selecionados quatro trabalhos para análise, sendo um deles com viés acadêmico e os outros três com viés de mercado. 
 
-A primeira parte do capítulo é focada em apresentar a dissertação de mestrado de Miika Ruissalo, que trata-se de um estudo de viabilidade de implementação de \textit{design system} em uma grande empresa de tecnologia e telecomunicações finlandesa. Em seguida, são apresentados três casos de implementações do \textit{design system} em empresas consolidadas no mercado: Ryte, Gusto e Airbnb. Em cada um dos casos, foram destacadas as motivações e aprendizados adquiridos durante o processo de implementação.
+A primeira parte do capítulo é focada em apresentar a dissertação de mestrado de Miika Ruissalo \cite{ruissalo2018operating}, que trata-se de um estudo de viabilidade de implementação de \textit{design system} em uma grande empresa de tecnologia e telecomunicações finlandesa. Em seguida, são apresentados três casos de implementações do \textit{design system} em empresas consolidadas no mercado: Ryte, Gusto e Airbnb. Em cada um dos casos, foram destacadas as motivações e aprendizados adquiridos durante o processo de implementação.
 
 Finaliza-se o capítulo com uma breve discussão a respeito das semelhanças identificadas entre os diferentes trabalhos.
 
@@ -16,7 +16,7 @@ Finaliza-se o capítulo com uma breve discussão a respeito das semelhanças ide
 
 Ao se investigar a ocorrência de trabalhos relacionados na literatura, aquele que apresentou maior similidaridade, no que se diz respeito ao seu propósito, foi a dissertação de mestrado de \citeonline{ruissalo2018operating}.
 
-Entitulada \textit{Operating a design system in a large software company}, \citeonline{ruissalo2018operating} discute o fenômeno \textit{design system} como proposta de solução para problemas de consistência e escalabilidade que empresas de tecnologia acabam vivenciando durante o fluxo de desenvolvimento de seus produtos em larga escala. A fase empírica do projeto se demonstrou como um estudo da aplicação da metodologia por uma grande empresa de tecnologia e telecomunicações finlandesa. A empresa em questão havia passado por um processo de restruturação do seu design, criando seu próprio \textit{design system}. Tal evento ocorreu três anos antes do desenvolvimento da dissertação.
+Intitulada \textit{Operating a design system in a large software company}, \citeonline{ruissalo2018operating} discute o fenômeno \textit{design system} como proposta de solução para problemas de consistência e escalabilidade que empresas de tecnologia acabam vivenciando durante o fluxo de desenvolvimento de seus produtos em larga escala. A fase empírica do projeto se demonstrou como um estudo da aplicação da metodologia por uma grande empresa de tecnologia e telecomunicações finlandesa. A empresa em questão havia passado por um processo de restruturação do seu design, criando seu próprio \textit{design system}. Tal evento ocorreu três anos antes do desenvolvimento da dissertação.
 
 O experimento teve duração de seis meses, período ao qual foram observados sete dos vários times de desenvolvimento de produtos da empresa. O grupo amostral escolhido para o experimento foi cuidadosamente selecionado para garantir que todos os contextos chave da organização seriam cobertos pela pesquisa. O \autoref{table:ruissaloTeams} apresenta as características de cada um dos times selecionados.
 
@@ -49,7 +49,7 @@ O experimento teve duração de seis meses, período ao qual foram observados se
 
 A metodologia adotada pela dissertação consistiu basicamente em duas grandes fases: observação e entrevistas. Na primeira fase, \citeonline{ruissalo2018operating} dedicou seu tempo a observar o dia-a-dia de cada um dos times selecionados, estando posicionado estratégicamente próximo de três destes. Na segunda fase, o pesquisador realizou entrevistas com dois grupos distintos de profissionais: designers e desenvolvedores. Cada grupo, portanto, experimentou um roteiro de entrevista diferente do outro.
 
-Como resultado do experimento, foi observado que uma das maiores dores dos profissionais de desenvolvimento de produto é a falta de uma fonte única da verdade. Esse foi um dos principais argumentos utilizado pelos times quando a empresa sob estudo optou por desenvolver seu \textit{design system}. A maioria dos benefícios apontados no \autoref{chap:fundamentacaoTeorica} do presente trabalho foi parceptível na empresa finlandesa, tanto na visão da organização quanto na visão dos designers e desenvolvedores. Consistência, poder de reusabilidade e velocidade no desenvolvimento foram características observadas no produto e nos times analisados pela dissertação, exemplificando assim a metodologia de \textit{design system} como um verdadeiro sucesso no desenvolvimento de produtos digitais em uma grande organização.
+Como resultado do experimento, foi observado que uma das maiores queixas dos profissionais de desenvolvimento de produto é a falta de uma fonte única da verdade. Esse foi um dos principais argumentos utilizado pelos times quando a empresa sob estudo optou por desenvolver seu \textit{design system}. A maioria dos benefícios apontados no \autoref{chap:fundamentacaoTeorica} do presente trabalho foi parceptível na empresa finlandesa, tanto na visão da organização quanto na visão dos designers e desenvolvedores. Consistência, poder de reusabilidade e velocidade no desenvolvimento foram características observadas no produto e nos times analisados pela dissertação, exemplificando assim a metodologia de \textit{design system} como um verdadeiro sucesso no desenvolvimento de produtos digitais em uma grande organização.
 
 \section{Ryte}
 \label{sec:ryte}
@@ -60,16 +60,10 @@ Seu produto surgiu como resultado de uma repaginação do antigo \textit{OnPage.
 
 O artigo tem início com \citeonline{ryteDesignSystem} afirmando que, nos momentos iniciais da transição, toda a equipe estava bastante motivada. Por esse motivo, a plataforma ganhou forma com bastante velocidade, porém sem consistência alguma. Os diversos times que compunham a organização trabalhavam isoladamente uns dos outros, produzindo assim diferentes soluções para um mesmo problema. Com quatro meses de projeto, percebeu-se que o caminho que estava sendo traçado não era sustentável e que medidas deveriam ser tomadas imediatamente.
 
-Naquele momento, a empresa enfrentava três grandes problemas que deveriam ser solucionados o quanto antes.
-
-O primeiro deles era o fato de que todos os produtos da plataforma eram muito diferentes uns dos outros, tanto visualmente quanto em relação à experiência do usuário ao utilizá-los. Com 11 tipos distintos de \textit{pop-ups}, 23 tipos de botões e 67 tons de cinza diferentes, os usuários acabavam tendo que reaprender os mesmos conceitos quando utilizavam uma nova ferramenta disponibilizada pela plataforma.
-
-O segundo problema era um pouco mais grave: um processo de design lento e ineficiente. O tempo para se construir novas funcionalidades era elevado, uma vez que era preciso reconstruir a grande maioria dos componentes presentes na entrega do zero.
-
-Por fim, o último ponto a ser resolvido era a falta de identidade de marca no mercado. Além de inconsistências na plataforma, não havia co-relação alguma entre os mecanismos de marketing e a plataforma em si.
+Naquele momento, a empresa enfrentava três grandes problemas que deveriam ser solucionados o quanto antes. O primeiro deles era o fato de que todos os produtos da plataforma eram muito diferentes uns dos outros, tanto visualmente quanto em relação à experiência do usuário ao utilizá-los. Com 11 tipos distintos de \textit{pop-ups}, 23 tipos de botões e 67 tons de cinza diferentes, os usuários acabavam tendo que reaprender os mesmos conceitos quando utilizavam uma nova ferramenta disponibilizada pela plataforma. O segundo problema era um pouco mais grave: um processo de design lento e ineficiente. O tempo para se construir novas funcionalidades era elevado, uma vez que era preciso reconstruir a grande maioria dos componentes presentes na entrega do zero. Por fim, o último ponto a ser resolvido era a falta de identidade de marca no mercado. Além de inconsistências na plataforma, não havia correlação alguma entre os mecanismos de marketing e a plataforma em si.
 
 Inspirada em empresas como Shopify, Atlassian e Hubspot, a Ryte buscou na metodologia do \textit{design system} uma solução para os seus problemas. A abordagem utilizada consistia basicamente em dois componentes: um arquivo Sketch \footnote{O Sketch é uma ferramenta de design gráfico voltada para prototipação de interfaces de usuário
-desenvolvida pela Bohemian BV, e é disponibilizada em <https://www.sketchapp.com/>.} e um repositório Git \footnote{O Git é um sistema de controle de versões distribuído. Normalmente é usado no desenvolvimento de software, mas pode ser utilizado para registrar o histórico de edições de qualquer tipo de arquivo.} compartilhados. Percebe-se que não foram abordados fatores como tom de voz e princípios de design nessa primeira versão. Além disso, não existe interligação clara entre artefatos de design e artefatos de desenvolvimento e a justificativa para tal decisão reside no fato de que o time identificou problemas de escalabilidade ao se unir os dois mundos.
+desenvolvida pela Bohemian BV, e é disponibilizada em <https://www.sketchapp.com/>.} e um repositório Git \footnote{O Git é um sistema de controle de versões distribuído. Normalmente é usado no desenvolvimento de software, mas pode ser utilizado para registrar o histórico de edições de qualquer tipo de arquivo.} compartilhados. Não foram abordados fatores como tom de voz e princípios de design nessa primeira versão. Além disso, não existe interligação clara entre artefatos de design e artefatos de desenvolvimento e a justificativa para tal decisão reside no fato de que o time identificou problemas de escalabilidade ao se unir os dois mundos.
 
 Como resultado imediato da implementação do \textit{design system} percebeu-se: processo de design oito vezes mais rápido, mais velocidade no desenvolvimento de novas funcionalidades e um maior poder de escalabilidade. \citeonline{ryteDesignSystem} ainda compartilha no artigo alguns dos aprendizados que o time vivenciou ao longo do processo. Tais aprendizados são consolidados e apresentados no \autoref{table:ryteLessonsLearned}.
 
@@ -116,7 +110,7 @@ Foi nesse momento que Rendle decidiu, de maneira proativa, iniciar os trabalhos 
 	 
 	 Um \textit{design system} não precisa estar completo para ser útil & Como seu propósito é sanar os problemas de toda uma organização, a nível de design de produto, é comum se empregar muito esforço para a construção de um \textit{design system} perfeito. A verdade é que, por mais simples que ele seja, um \textit{design system} por si só já gera um valor muito grande, uma vez que ele centraliza as tomadas de decisões de design de produto da empresa. \\\hline
 	 
-	 \textit{Design Systems} surgem e morrem por conta de sua documentação & A documentação de um componente é tão importante quanto o componente em si. Caso a maneira como um componente deve ser manipulado não seja auto-explicativa, seus usuários tenderão a evita-lo. \\\hline
+	 \textit{Design Systems} surgem e morrem por conta de sua documentação & A documentação de um componente é tão importante quanto o componente em si. Caso a maneira como um componente deve ser manipulado não seja auto-explicativa, seus usuários tenderão a evitá-lo. \\\hline
 	 
 	 Um \textit{design system} é um repositório de conhecimento & \textit{Design Systems} não são importantes somente por representar precisamente a base de código, mas também por diminuir a complexidade social de uma organização, estimulando a comunicação e concentrando o conhecimento. \\\hline
     
@@ -138,7 +132,7 @@ Rendle finaliza seu artigo destacando uma das vantagens de se implementar um \te
 \section{Airbnb}
 \label{sec:airbnb}
 
-Como último exemplo de trabalho relacionado ao presente documento, será apresentado o estudo de caso de implementação do \textit{design system} da Airbnb. Com sede em San Francisco - California, Estados Unidos, a Airbnb é uma famosa empresa que opera um mercado on-line global de serviços de hospedagem acessível através de seu site e aplicativo para dispositivos móveis.
+Como último exemplo de trabalho relacionado ao presente documento, será apresentado o estudo de caso de implementação do \textit{design system} da Airbnb. Com sede em San Francisco - California, Estados Unidos, a Airbnb é uma famosa empresa que opera um mercado online global de serviços de hospedagem acessível através de seu site e aplicativo para dispositivos móveis.
 
 No artigo \textit{Building a Visual Language}, produzido por \citeonline{airbnbDesignSystem} e disponibilizado diretamente no site oficial da empresa, discorre-se sobre a trajetória de criação do sistema, poderando-se suas motivações e aprendizados adquiridos ao longo do processo.
 
@@ -160,7 +154,7 @@ Para sanar os problemas citados, a Airbnb decidiu por construir o seu próprio \
 
 	\multicolumn{1}{|c|}{\bfseries Aprendizado} & \multicolumn{1}{c|}{\bfseries Comentário} \\\hline
 	
-	 Nem todos os componentes são criados igualmente & Alguns componentes podem ter variações de implementações para diferentes plataformas. Em alguns casos, manter esse segregação é mais saudável e facilita a manutenção. \\\hline
+	 Nem todos os componentes são criados igualmente & Alguns componentes podem ter variações de implementações para diferentes plataformas. Em alguns casos, manter essa segregação é mais saudável e facilita a manutenção. \\\hline
 	 
 	 Documentação & A atividade de documentação dos componentes deve fazer parte do processo de criação, independentemente dos prazos de entrega. A falta de documentação dos componentes pode gerar muita confusão. \\\hline
     
